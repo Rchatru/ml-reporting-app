@@ -18,3 +18,15 @@ st.set_page_config(
 )
 
 st.title('ML Reporting')
+
+st.markdown("""In this app you can retrieve and compare the performance for different training runs, among varying ML
+models, hyperparameters and features. Select in the left sidebar your desired combination to check the metrics and graphs.""")
+
+
+with st.sidebar:
+    st.write(Select your combination)
+    dim = st.radio("Dimensionality red.", ("None", "PCA"))
+    algo = st.radio("Choose Algorithm", ("SVM", "NB", "CART"))
+
+
+    
