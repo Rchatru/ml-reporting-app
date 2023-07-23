@@ -24,7 +24,7 @@ models, hyperparameters and features. Select in the left sidebar your desired co
 
 
 with st.sidebar:
-    st.write(Select your combination)
+    st.write("Select your combination")
     dim = st.radio("Dimensionality red.", ("None", "PCA"))
     algo = st.radio("Choose Algorithm", ("SVM", "NB", "CART"))
 
